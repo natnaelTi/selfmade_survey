@@ -1,0 +1,85 @@
+{
+    "doctype": "Workspace",
+    "name": "Selfmade Survey",
+    "icon": "survey",
+    "is_hidden": 0,
+    "category": "Modules",
+    "charts": [
+        {
+            "name": "Survey Responses per Day",
+            "chart_name": "Survey Responses",
+            "type": "Line"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "New Survey",
+            "type": "DocType",
+            "link": "Survey Form",
+            "doc_view": "New"
+        },
+        {
+            "name": "Survey Templates",
+            "type": "DocType",
+            "link": "Survey Template",
+            "doc_view": "List"
+        },
+        {
+            "name": "Survey Responses",
+            "type": "DocType",
+            "link": "Survey Response",
+            "doc_view": "List"
+        }
+    ],
+    "links": [
+        {
+            "label": "Survey Management",
+            "items": [
+                {
+                    "type": "DocType",
+                    "name": "Survey Form",
+                    "label": "Survey Form",
+                    "onboard": 1
+                },
+                {
+                    "type": "DocType",
+                    "name": "Survey Template",
+                    "label": "Survey Template",
+                    "onboard": 1
+                },
+                {
+                    "type": "DocType",
+                    "name": "Survey Question",
+                    "label": "Survey Question"
+                }
+            ]
+        },
+        {
+            "label": "Responses",
+            "items": [
+                {
+                    "type": "DocType",
+                    "name": "Survey Response",
+                    "label": "Survey Response"
+                }
+            ]
+        },
+        {
+            "label": "Reports",
+            "items": [
+                {
+                    "type": "Report",
+                    "name": "Survey Response Analysis",
+                    "doctype": "Survey Response",
+                    "is_query_report": 1
+                },
+                {
+                    "type": "Report",
+                    "name": "Survey Completion Rates",
+                    "doctype": "Survey Response",
+                    "is_query_report": 1
+                }
+            ]
+        }
+    ]
+}

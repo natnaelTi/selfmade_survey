@@ -1,0 +1,9 @@
+{
+    "doctype": "Report",
+    "name": "Survey Response Analysis",
+    "ref_doctype": "Survey Response",
+    "report_name": "Survey Response Analysis",
+    "report_type": "Script Report",
+    "is_standard": "Yes",
+    "module": "Selfmade Survey"
+}

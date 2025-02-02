@@ -1,0 +1,30 @@
+{
+    "name": "Survey Template",
+    "doctype": "DocType",
+    "module": "Selfmade Survey",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "template_name",
+            "label": "Template Name",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "category",
+            "label": "Category",
+            "fieldtype": "Link",
+            "options": "Survey Category"
+        },
+        {
+            "fieldname": "template_json",
+            "label": "Template Configuration",
+            "fieldtype": "JSON"
+        },
+        {
+            "fieldname": "is_standard",
+            "label": "Standard Template",
+            "fieldtype": "Check"
+        }
+    ]
+}

@@ -29,8 +29,11 @@ app_license = "mit"
 # app_include_js = "/assets/selfmade_cs_customization/js/selfmade_cs_customization.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/selfmade_cs_customization/css/selfmade_cs_customization.css"
-# web_include_js = "/assets/selfmade_cs_customization/js/selfmade_cs_customization.js"
+web_include_css = "/assets/selfmade_survey/css/survey.min.css"
+web_include_js = [
+    "/assets/selfmade_survey/js/survey.jquery.min.js",
+    "/assets/selfmade_survey/js/survey_web_form.js"
+]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "selfmade_cs_customization/public/scss/website"
@@ -138,11 +141,10 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+# 	"Survey Form": {
+#         "after_insert": "selfmade_survey.selfmade_survey.api.survey_form.after_survey_created",
+#         "on_trash": "selfmade_survey.selfmade_survey.api.survey_form.before_survey_delete"
+#     }
 # }
 
 # Scheduled Tasks
@@ -193,6 +195,21 @@ app_license = "mit"
 # -----------------------------------------------------------
 
 # ignore_links_on_delete = ["Communication", "ToDo"]
+
+# Fixtures
+# --------
+# Fixtures and customizations
+
+# fixtures = [
+#     {
+#         "dt": "Web Form",
+#         "filters": [["name", "in", ["webinar-feedback"]]],
+#     },
+#     {
+#         "dt": "Survey",
+#         "filters": [["name", "in", ["Webinar Feedback"]]],
+#     },
+# ]
 
 # Request Events
 # ----------------

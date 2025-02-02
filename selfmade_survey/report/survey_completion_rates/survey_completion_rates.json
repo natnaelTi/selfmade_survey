@@ -1,0 +1,9 @@
+{
+    "doctype": "Report",
+    "name": "Survey Completion Rates",
+    "ref_doctype": "Survey Response",
+    "report_name": "Survey Completion Rates",
+    "report_type": "Script Report",
+    "is_standard": "Yes",
+    "module": "Selfmade Survey"
+}
